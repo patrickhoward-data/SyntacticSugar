@@ -1,0 +1,179 @@
+/* element selectors */
+article{
+    background-color: rgba(250, 233, 208, 0.357);
+    margin: auto;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    width: 75%;
+}
+aside{
+    background-color: rgba(210, 250, 211, 0.498);
+    border-radius: 15px;
+    box-shadow: -0.5em 0.3em 0.4em orange;
+    color: black;
+    float: right;
+    font-style: italic;
+    margin-left: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 33%;
+}
+body {
+    background-color: linen;
+    color: black;
+    font-family:'Della Respira', serif;
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+footer{
+    background-color: #c8c0b8;
+    color: black;
+    margin-top: 100px;
+    padding: 7px;
+    text-align: center;
+}
+
+header{
+    background-image: url('../images/hat.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 250px;
+    /* text */
+    padding: 5%;
+    padding-top: 5%;
+    color: white;
+    text-decoration: underline;
+    
+}
+
+main{
+    margin:auto;
+    margin-top: 50px;
+    width: 80%;
+
+}
+
+nav{
+    background-color: #c8c0b8;
+    margin-bottom: 30px;
+    overflow:hidden;
+    padding-left:1%;
+}
+
+nav li{
+    float:left;
+
+}
+nav li a{
+    color: black;
+    display: block;
+    padding: 20px 20px;
+    text-align:center;
+    text-decoration: none;
+}
+nav li a:hover:not(.active){
+    background-color:linen;
+    color:black;
+}
+
+nav ul {
+    list-style-type:none;
+    margin: 0%;
+    padding: 0%;
+}
+section{
+    margin: auto;
+    padding-top: 40px;
+    width: 80%;
+}
+table, th, td {
+    border-collapse: collapse;
+}
+th, td{
+    border-bottom: 0;
+    padding: 4px 20px;
+    text-align: right;
+}
+td{
+    color: green;
+}
+tr.header{
+    background-color: #c8c0b8; !important;
+    color: white;
+    font-weight: bold;
+}
+tr:nth-child(even){
+    background: white;
+}
+tr:nth-child(odd){
+    background: lightgray;
+}
+
+
+/*  class selectors */
+    .active{
+        background-color: rgb(239, 222, 186);
+        color:green;
+    }
+    .byline{
+        font-size: 1em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: underline;
+    }
+    .byline_date{
+        font-size: 0.8em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .container{
+        padding: 20px;
+    }
+    .column{
+        box-sizing: border-box;
+        float: left;
+        height: auto;   
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 33.3%;
+
+    }
+    .overflow{
+        overflow-x:auto;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    .label{
+        text-align: center;
+        font-style: italic;
+    }
+
+    .plot{
+        margin: 20px 0;
+        max-height: 500px;
+        width: 100%
+    }
+
+    .staff{
+
+        border-radius: 50%;
+        margin-bottom: 20px;
+        width: 33.3%;
+    }
+/* @media rules */
+
+@media screen and (max-width: 600px){
+    .column {
+        display: block;
+        width: 100%;
+    }
+}
